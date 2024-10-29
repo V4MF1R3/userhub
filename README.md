@@ -2,6 +2,8 @@
 
 UserHub is a Django-based user management application with features for user registration, login, profile management, password reset, and change functionalities, making it ideal for securely handling user data and authentication.
 
+Demonstration video: [https://youtu.be/JM6UTyW377E](https://youtu.be/JM6UTyW377E)
+
 ## Features
 * **User Registration:** New users can sign up by providing a username, email, and password.
 * **User Login:** Authenticated users can log in using their credentials.
