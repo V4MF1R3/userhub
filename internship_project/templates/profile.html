@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Profile</h1>
+        <div class="bg-white p-4 border rounded shadow">
+            <p><strong>Username:</strong> {{ username }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Date Joined:</strong> {{ date_joined }}</p>
+            <p><strong>Last Active:</strong> {{ last_login }}</p>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{% url 'dashboard' %}" class="btn btn-secondary">Home</a>
+            <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+</body>
+
+</html>

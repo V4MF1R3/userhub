@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1>Hi, {{ username }}!</h1>
+            <div class="mt-4">
+                <a href="{% url 'profile' %}" class="btn btn-primary mx-2">Profile</a>
+                <a href="{% url 'change_password' %}" class="btn btn-secondary mx-2">Change Password</a>
+            </div>
+            <div class="mt-4">
+                <a href="{% url 'logout' %}" class="btn btn-danger">Log Out</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
